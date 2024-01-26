@@ -1,5 +1,7 @@
 import './App.css';
+import { Oscar } from './Oscar';
 import { Greet } from './components/Greet';
+import { Heading } from './components/Heading';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
@@ -26,10 +28,14 @@ function App() {
   ]
   return (
     <div className="App">
-      <Greet name='Chetana' messageCount={20} isLoggedIn={false} />
+      <Greet name='Mark' isLoggedIn={false} />
       <Person name={personName}/>
       <PersonList names={nameList}/>
       <Status status='success' />
+      <Heading>Placeholder text</Heading>
+      <Oscar>
+        <Heading>Oscar goes to Leonardo Dicpario!</Heading>
+      </Oscar>
     </div>
   );
 }
