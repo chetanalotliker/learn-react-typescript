@@ -11,6 +11,9 @@ import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
 import { Counter } from './components/state/Counter';
 import { User } from './components/state/User';
+import { Box } from './components/context/Box';
+import { ThemeContextProvider } from './components/context/ThemeContext';
+import { UserContextProvider } from './components/context/UserContext';
 
 function App() {
   const personName = {
@@ -54,6 +57,15 @@ function App() {
       <ColoredLine color="black" />
       <p>useReducer</p>
       <Counter/>
+      <br></br>
+      <ColoredLine color="black" />
+      <p>useContext</p>
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   );
 }
