@@ -17,6 +17,7 @@ import { UserContextProvider } from './components/context/UserContext';
 import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
 import { List } from './components/generics/List';
+import { RandomNumber } from './components/restriction/RandomNumber';
 
 function App() {
   const personName = {
@@ -75,6 +76,8 @@ function App() {
       <List items={['Batman','Superman','Wondar Woman']} onClick={(item)=> console.log(item)} />
 
       <List items={[1,2,3]} onClick={(item)=> console.log(item)}/>
+
+      <RandomNumber value={10} isPositive />
     </div>
   );
 }
