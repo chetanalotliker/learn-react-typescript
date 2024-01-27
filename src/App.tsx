@@ -1,4 +1,5 @@
 import './App.css';
+import { ColoredLine } from './ColoredLine';
 import { Oscar } from './Oscar';
 import { Button } from './components/Button';
 import { Container } from './components/Container';
@@ -8,6 +9,7 @@ import { Input } from './components/Input';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
+import { Counter } from './components/state/Counter';
 import { User } from './components/state/User';
 
 function App() {
@@ -48,6 +50,10 @@ function App() {
       <br/><br/>
       <Container styles={{ border:'1px solid black', padding:'1rem'}}/>
       <User />
+      <br></br>
+      <ColoredLine color="black" />
+      <p>useReducer</p>
+      <Counter/>
     </div>
   );
 }
