@@ -16,6 +16,7 @@ import { ThemeContextProvider } from './components/context/ThemeContext';
 import { UserContextProvider } from './components/context/UserContext';
 import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
+import { List } from './components/generics/List';
 
 function App() {
   const personName = {
@@ -70,6 +71,10 @@ function App() {
       </UserContextProvider>
 
       <Private isLoggedIn={true} Component={Profile}/>
+
+      <List items={['Batman','Superman','Wondar Woman']} onClick={(item)=> console.log(item)} />
+
+      <List items={[1,2,3]} onClick={(item)=> console.log(item)}/>
     </div>
   );
 }
