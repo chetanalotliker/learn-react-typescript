@@ -3,6 +3,8 @@
 This is a react js project done by using react as well as typescript
 Refered Playlist below for learning: https://www.youtube.com/watch?v=TiSGujM22OI&list=PLC3y8-rFHvwi1AXijGTKM0BKtHzVC-LSK
 
+See demo: https://chetanalotliker.github.io/learn-react-typescript
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
